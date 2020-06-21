@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Empresa X</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="56"> <!--El 56 es la altura del header-->
+    <!--header--> <!--data-offset es para eliminar el error de activacion del spy-scroll-->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container"> 
+        <a class="navbar-brand" href="#">
+          Logo
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto"> <!--mr(marging right-left), para mover los elementos a la derecha-->
+            <li class="nav-item">
+              <a class="nav-link" href="#main">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Personajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">Lugar y fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#orador">Dudas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-platzi" href="#"  data-toggle="modal" data-target="#modalCompra">Compra tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--/header-->
+    <!--Main-->
+    <section id="main">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+      
+        <div class="carousel-inner">                                                      <!--Paea que siga sin detenerse-->
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="imagenes/hawaii.jpg" alt="Hawai 1">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imagenes/hawaii2.jpg" alt="Hawai 2">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="imagenes/hawaii3.jpeg" alt="Hawai 3">
+            </div>
+             <div class="overlay">
+               <div class="container">
+                 <div class="row align-items-center"> <!--Para que se centre verticalmente el texto-->
+                   <div class="col-md-6 offset-md-6 text-center text-md-right">
+                                          <!--Text center para que este centrado solo para los pequeños
+                                          y este hacia la derecha a partir de los medianos-->
+                     <h1><abbr data-toggle="tooltip" data-placement="top" title="Aqui va la descripcion de su empresa">Nombre </abbr>Evento/Empresa</h1>
+                     <p class="d-none d-md-block"> <!--Dysplay block a partir de los medianos-->
+                       Phasellus fringilla quis diam iaculis luctus. Aliquam laoreet suscipit turpis, non 
+                       iaculis metus sagittis ullamcorper. Sed vel aliquam mi. Vivamus diam nunc, rutrum
+                       non ligula sit amet, facilisis pulvinar ex. Quisque efficitur enim elit, sed fermentum 
+                       diam consequat in. Proin at sapien mattis nisi rutrum cursus vitae in diam. Proin nec 
+                       nulla tristique, volutpat diam nec, semper tellus.
+                    </p>
+                    <a href="#" class="btn btn-outline-light">Ir a...</a>
+                    <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Ir a...</button>
+                      
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </section>
+    <!--/Main-->
+
+    <!--Speakers-->
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Personajes</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card"> <!--Tarjetas por fila Peque-1 Median-2 Lg 3-->
+                <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="badges">
+                    <span class="badge badge-primary">Insignia1</span>
+                    <span class="badge badge-secondary">Insignia2</span>
+                    <span class="badge badge-success">Insignia3</span>
+                    <span class="badge badge-danger">Insignia4</span>
+                    <span class="badge badge-warning">Insignia5</span>
+                    <span class="badge badge-info">Insignia6</span>
+                    <span class="badge badge-light">Insignia7</span>
+                    <span class="badge badge-dark">Insignia8</span>
+                  </div>
+                  <h5 class="card-title">Titulo</h5>
+                  <p class="card-text">Pellentesque ultrices placerat felis at tempus. Curabitur commodo lacus nec elit gravida vestibulum. Praesent condimentum mauris et nunc pellentesque, ut lobortis nibh consequat. </p>
+                </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!--Para modificar varias ocurrecias Ctrl+D-->
+            <div class="card">
+                <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="badges">
+                    <span class="badge badge-primary">Insignia1</span>
+                    <span class="badge badge-secondary">Insignia2</span>
+                    <span class="badge badge-success">Insignia3</span>
+                    <span class="badge badge-danger">Insignia4</span>
+                    <span class="badge badge-warning">Insignia5</span>
+                    <span class="badge badge-info">Insignia6</span>
+                    <span class="badge badge-light">Insignia7</span>
+                    <span class="badge badge-dark">Insignia8</span>
+                  </div>
+                  <h5 class="card-title">Titulo</h5>
+                  <p class="card-text">Pellentesque ultrices placerat felis at tempus. Curabitur commodo lacus nec elit gravida vestibulum. Praesent condimentum mauris et nunc pellentesque, ut lobortis nibh consequat. </p>
+                </div>
+                </div>
+          </div>
+           <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="badges">
+             <span class="badge badge-primary">Insignia1</span>
+                    <span class="badge badge-secondary">Insignia2</span>
+                    <span class="badge badge-success">Insignia3</span>
+                    <span class="badge badge-danger">Insignia4</span>
+                    <span class="badge badge-warning">Insignia5</span>
+                    <span class="badge badge-info">Insignia6</span>
+                    <span class="badge badge-light">Insignia7</span>
+                    <span class="badge badge-dark">Insignia8</span>
+                  </div>
+                  <h5 class="card-title">Titulo</h5>
+                  <p class="card-text">Pellentesque ultrices placerat felis at tempus. Curabitur commodo lacus nec elit gravida vestibulum. Praesent condimentum mauris et nunc pellentesque, ut lobortis nibh consequat. </p>
+                </div>
+                </div>
+          </div>
+           <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/usuario.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="badges">
+                     <span class="badge badge-primary">Insignia1</span>
+                    <span class="badge badge-secondary">Insignia2</span>
+                    <span class="badge badge-success">Insignia3</span>
+                    <span class="badge badge-danger">Insignia4</span>
+                    <span class="badge badge-warning">Insignia5</span>
+                    <span class="badge badge-info">Insignia6</span>
+                    <span class="badge badge-light">Insignia7</span>
+                    <span class="badge badge-dark">Insignia8</span>
+                  </div>
+                  <h5 class="card-title">Titulo</h5>
+                  <p class="card-text">Pellentesque ultrices placerat felis at tempus. Curabitur commodo lacus nec elit gravida vestibulum. Praesent condimentum mauris et nunc pellentesque, ut lobortis nibh consequat. </p>
+                </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Speakers-->
+
+    <!--Lugar y Fecha del evento-->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0 "> <!--pl/pr (pading left y right)-->
+            <img src="imagenes/honolulu.jpg" alt="Honolulu">
+          </div>
+          <div class="col-12 col-lg-6 pt-4  pb-4 text-center"> <!--pading-top-->
+            <h2>Nombre fecha y descripcion del lugar</h2> 
+            <p>
+              Phasellus fringilla quis diam iaculis luctus. Aliquam laoreet suscipit turpis, non iaculis metus sagittis ullamcorper. Sed vel aliquam mi. Vivamus diam nunc, rutrum non ligula sit amet, facilisis pulvinar ex. Quisque efficitur enim elit, sed fermentum diam consequat in. Proin at sapien mattis nisi rutrum cursus vitae in diam. Proin nec nulla tristique, volutpat diam nec, semper tellus..
+            </p>
+            <a href="https://es.wikipedia.org/wiki/Honolulu" class="btn btn-outline-light" target="_blanck">Conocer mas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Lugar y Fecha del evento-->
+
+    <!--Conviertete en speaker-->
+    <section id="orador" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Conviertete en un</small>
+            <h2>lo que desee poner aqui</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Dejame tus datos para recibir un  <abbr data-toggle="tooltip" title="Breve descripcion de lo que recibira">producto/beneficio/informacion</abbr>. Cuentame si tienes alguna duda
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2 pb-2">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6"> <!--form-group (Todo lo de adentro es un grupo y agrega un espaciado entre ellos)-->
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <textarea name="text" class="form-control form-control-lg" placeholder="¿Cuál es tu duda?" ></textarea> <!--form-control-lg (Significa que es un imput dentro del formulario y queremos que sea grande)-->
+                  <small class="form-text text-muted">Recuerda ser especifico con tus duda</small>
+                </div>      <!--text-muted (para que aparezca mas gris)-->
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button" class="btn btn-success btn-lg btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Conviertete en speaker-->
+
+    <!--footer-->
+    <footer id="footer" class="pb-3 pt-3"> <!--Pading top y bottom-->
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#">Preguntas frecuentes</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Contactanos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Blog</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Terminos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/footer-->
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+          </form>
+          <!--Alerta-->
+          <div class="alert alert-info" role="alert">
+            Recibiras un correo de confirmacion si eres el ganador
+        </div>
+          <!--/Alerta-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-platzi">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- /Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+     
+</html>
+
